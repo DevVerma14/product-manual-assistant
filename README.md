@@ -36,26 +36,28 @@ A simple **Streamlit-based RAG application** that allows users to:
 
 ## 📂 Project Structure
 
+```bash
 product-manual-assistant/
 │
-├── app.py # Main Streamlit App
+├── app.py                  # Main Streamlit App
 ├── rag/
-│ ├── pdf_loader.py # PDF text extraction
-│ ├── chunker.py # Chunking logic
-│ ├── retriever.py # FAISS retriever
-│ ├── generator.py # Answer generation (basic)
+│   ├── pdf_loader.py        # PDF text extraction
+│   ├── chunker.py           # Chunking logic
+│   ├── retriever.py         # FAISS retriever
+│   └── generator.py         # Answer generation (basic)
 │
 ├── scaledown/
-│ └── compressor.py # Context compression module
+│   └── compressor.py        # Context compression module
 │
 ├── dashboard/
-│ └── metrics.py # Manual statistics
+│   └── metrics.py           # Manual statistics
 │
 ├── sample_data/
-│ └── sample_manual.txt
+│   └── sample_manual.txt
 │
 ├── requirements.txt
 └── README.md
+
 
 ---
 
