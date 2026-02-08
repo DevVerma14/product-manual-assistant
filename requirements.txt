@@ -1,0 +1,10 @@
+streamlit
+PyMuPDF
+pdfplumber
+sentence-transformers
+faiss-cpu
+numpy
+tqdm
+openai
+tiktoken
+rich
