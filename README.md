@@ -58,14 +58,10 @@ product-manual-assistant/
 ├── requirements.txt
 └── README.md
 
-
----
-
-## ⚡ Quick Start
-
-### 1️⃣ Create Virtual Environment
-
-```bash
+⚡ Quick Start
+1️⃣ Create Virtual Environment
+bash
+Copy code
 python -m venv .venv
 Activate:
 
