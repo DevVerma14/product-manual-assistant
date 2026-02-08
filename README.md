@@ -14,7 +14,7 @@ It uses:
 ## 🎥 Demo Video
 
 📌 Watch Project Demo Here:  
-👉 https://github.com/user-attachments/assets/5711e688-1fcb-4529-b0c8-952099f47e3a
+👉 https://github.com/user-attachments/assets/20637079-b4cb-41a8-ba03-a9ab6505d208
 
 ---
 
