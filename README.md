@@ -14,9 +14,7 @@ It uses:
 ## 🎥 Demo Video
 
 📌 Watch Project Demo Here:  
-👉 *(Upload your demo video on Drive/YouTube and paste link below)*
-
-**Demo Link:** https://your-demo-video-link.com
+👉 https://github.com/user-attachments/assets/5711e688-1fcb-4529-b0c8-952099f47e3a
 
 ---
 
@@ -72,7 +70,7 @@ product-manual-assistant/
 
 ## ⚡ Quick Start
 1️⃣ Clone Repository
-git clone https://github.com/<your-username>/product-manual-assistant.git
+git clone https://github.com/DevVerma14/product-manual-assistant.git
 cd product-manual-assistant
 
 2️⃣ Create Virtual Environment
