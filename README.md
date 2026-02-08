@@ -70,41 +70,31 @@ product-manual-assistant/
 ```
 ---
 
-##⚡ Quick Start
+## ⚡ Quick Start
 1️⃣ Clone Repository
-bash
-Copy code
 git clone https://github.com/<your-username>/product-manual-assistant.git
 cd product-manual-assistant
+
 2️⃣ Create Virtual Environment
-bash
-Copy code
 python -m venv .venv
+
 3️⃣ Activate Environment
 Windows (PowerShell)
-bash
-Copy code
 .venv\Scripts\activate
 Mac/Linux
-bash
-Copy code
 source .venv/bin/activate
+
 4️⃣ Install Dependencies
-bash
-Copy code
 pip install -r requirements.txt
+
 5️⃣ Run Streamlit App
-bash
-Copy code
 streamlit run app.py
 App will open in browser at:
-
-arduino
-Copy code
 http://localhost:8501
+
 ---
 
-##💬 Example Questions
+## 💬 Example Questions
 Try asking:
 
 How do I load paper in the printer?
