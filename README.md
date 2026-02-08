@@ -1,23 +1,113 @@
-# Product Manual Assistant using RAG + ScaleDown Compression
+# 📘 Product Manual Assistant (RAG + ScaleDown)
 
-This project provides a Streamlit-based chatbot for uploading large product manuals (PDFs), retrieving relevant sections via semantic search (FAISS + embeddings), compressing context via a ScaleDown-like compressor, and answering user questions with source citations.
+A simple **Streamlit-based RAG application** that allows users to:
 
-Quick start
+- Upload any Product Manual PDF  
+- Automatically extract text  
+- Split it into chunks  
+- Store embeddings in a FAISS vector database  
+- Retrieve relevant sections for user questions  
+- Compress context using ScaleDown  
+- Display answers with source snippets  
 
-1. Create and activate Python environment (3.8+)
+---
+
+## 🚀 Features
+
+✅ Upload Product Manual (PDF)  
+✅ Semantic Search using FAISS  
+✅ Chunk-based Retrieval (RAG Pipeline)  
+✅ Context Compression using ScaleDown  
+✅ Streamlit UI for interactive Q&A  
+✅ Shows retrieved chunks + compression metrics  
+
+---
+
+## 🛠 Tech Stack
+
+- **Python**
+- **Streamlit**
+- **FAISS Vector Store**
+- **PDF Text Extraction (PyMuPDF)**
+- **ScaleDown Compressor**
+- **Embedding Model (Sentence Transformers)**
+
+---
+
+## 📂 Project Structure
+
+product-manual-assistant/
+│
+├── app.py # Main Streamlit App
+├── rag/
+│ ├── pdf_loader.py # PDF text extraction
+│ ├── chunker.py # Chunking logic
+│ ├── retriever.py # FAISS retriever
+│ ├── generator.py # Answer generation (basic)
+│
+├── scaledown/
+│ └── compressor.py # Context compression module
+│
+├── dashboard/
+│ └── metrics.py # Manual statistics
+│
+├── sample_data/
+│ └── sample_manual.txt
+│
+├── requirements.txt
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## ⚡ Quick Start
+
+### 1️⃣ Create Virtual Environment
 
 ```bash
 python -m venv .venv
-.\.venv\Scripts\activate
+Activate:
+
+bash
+Copy code
+.venv\Scripts\activate
+2️⃣ Install Requirements
+bash
+Copy code
 pip install -r requirements.txt
-```
-
-2. Run the Streamlit app
-
-```bash
+3️⃣ Run Streamlit App
+bash
+Copy code
 streamlit run app.py
-```
+💬 Example Questions
+Try asking:
 
-Notes
-- The generator attempts to use OpenAI if `OPENAI_API_KEY` is set; otherwise it uses a local extractive responder.
-- Compression metrics are shown in the UI.
+How do I load paper in the printer?
+
+How do I print on envelopes?
+
+How can I improve print quality?
+
+What should I do if paper jams?
+
+⚠ Notes
+This project uses a basic extractive answer generator.
+
+It does not require any paid API key.
+
+Answers are generated from retrieved manual chunks.
+
+📌 Future Improvements
+Add better LLM-based answer generation
+
+Add page-level citations
+
+Improve chunking + ranking
+
+Deploy on Streamlit Cloud
+
+👨‍💻 Author
+Built by Dev Verma
+Project: Product Manual Assistant (RAG + ScaleDown)
