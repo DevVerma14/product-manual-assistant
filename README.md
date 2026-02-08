@@ -71,6 +71,7 @@ product-manual-assistant/
 ## ⚡ Quick Start
 1️⃣ Clone Repository
 git clone https://github.com/DevVerma14/product-manual-assistant.git
+
 cd product-manual-assistant
 
 2️⃣ Create Virtual Environment
@@ -127,4 +128,5 @@ Deploy on Streamlit Cloud
 
 ## 👨‍💻 Author
 Built by Dev Verma
+
 Project: Product Manual Assistant (RAG + ScaleDown)
