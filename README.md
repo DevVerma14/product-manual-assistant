@@ -30,7 +30,7 @@ A simple **Streamlit-based RAG application** that allows users to:
 - **FAISS Vector Store**
 - **PDF Text Extraction (PyMuPDF)**
 - **ScaleDown Compressor**
-- **Embedding Model (Sentence Transformers)**
+- **Embedding Model (Sentence Transformers)**  
 
 ---
 
@@ -58,25 +58,39 @@ product-manual-assistant/
 ├── requirements.txt
 └── README.md
 
-⚡ Quick Start
-1️⃣ Create Virtual Environment
+---
+
+##⚡ Quick Start
+
+1️⃣ Clone Repository
+bash
+Copy code
+git clone https://github.com/<your-username>/product-manual-assistant.git
+cd product-manual-assistant
+2️⃣ Create Virtual Environment
 bash
 Copy code
 python -m venv .venv
-Activate:
-
+3️⃣ Activate Environment
+Windows (PowerShell)
 bash
 Copy code
 .venv\Scripts\activate
-2️⃣ Install Requirements
+Mac/Linux
+bash
+Copy code
+source .venv/bin/activate
+4️⃣ Install Dependencies
 bash
 Copy code
 pip install -r requirements.txt
-3️⃣ Run Streamlit App
+5️⃣ Run Streamlit App
 bash
 Copy code
 streamlit run app.py
-💬 Example Questions
+---
+
+##💬 Example Questions
 Try asking:
 
 How do I load paper in the printer?
@@ -87,14 +101,18 @@ How can I improve print quality?
 
 What should I do if paper jams?
 
-⚠ Notes
+---
+
+## ⚠ Notes
 This project uses a basic extractive answer generator.
 
 It does not require any paid API key.
 
 Answers are generated from retrieved manual chunks.
 
-📌 Future Improvements
+---
+
+##📌 Future Improvements
 Add better LLM-based answer generation
 
 Add page-level citations
@@ -103,6 +121,8 @@ Improve chunking + ranking
 
 Deploy on Streamlit Cloud
 
-👨‍💻 Author
+---
+
+##👨‍💻 Author
 Built by Dev Verma
 Project: Product Manual Assistant (RAG + ScaleDown)
