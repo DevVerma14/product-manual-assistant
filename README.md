@@ -57,9 +57,6 @@ product-manual-assistant/
 ├── requirements.txt
 └── README.md
 
-yaml
-Copy code
-
 ---
 
 ## ⚡ Quick Start
