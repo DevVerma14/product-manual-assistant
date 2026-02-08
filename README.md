@@ -1,25 +1,26 @@
 # 📘 Product Manual Assistant (RAG + ScaleDown)
 
-A simple **Streamlit-based RAG application** that allows users to:
+A modern **Streamlit-based Retrieval-Augmented Generation (RAG)** application that allows users to upload any **Product Manual PDF** and instantly ask questions from it.
 
-- Upload any Product Manual PDF  
-- Automatically extract text  
-- Split it into chunks  
-- Store embeddings in a FAISS vector database  
-- Retrieve relevant sections for user questions  
-- Compress context using ScaleDown  
-- Display answers with source snippets  
+This project combines:
+
+- **PDF Text Extraction**
+- **Semantic Search with FAISS**
+- **Chunk-based Retrieval**
+- **ScaleDown Context Compression**
+- **Interactive Streamlit Dashboard UI**
 
 ---
 
 ## 🚀 Features
 
-✅ Upload Product Manual (PDF)  
-✅ Semantic Search using FAISS  
-✅ Chunk-based Retrieval (RAG Pipeline)  
+✅ Upload any Product Manual (PDF)  
+✅ Automatic PDF text extraction  
+✅ Chunking + Vector Indexing using FAISS  
+✅ Semantic Retrieval of relevant manual sections  
 ✅ Context Compression using ScaleDown  
-✅ Streamlit UI for interactive Q&A  
-✅ Shows retrieved chunks + compression metrics  
+✅ Clean Answer Display with Retrieved Context  
+✅ Modern UI with Metrics + Chunk Expanders + History  
 
 ---
 
@@ -28,9 +29,9 @@ A simple **Streamlit-based RAG application** that allows users to:
 - **Python**
 - **Streamlit**
 - **FAISS Vector Store**
-- **PDF Text Extraction (PyMuPDF)**
+- **Sentence Transformers Embeddings**
+- **PyMuPDF (PDF Loader)**
 - **ScaleDown Compressor**
-- **Embedding Model (Sentence Transformers)**  
 
 ---
 
@@ -42,88 +43,96 @@ product-manual-assistant/
 ├── app.py                  # Main Streamlit App
 ├── rag/
 │   ├── pdf_loader.py        # PDF text extraction
-│   ├── chunker.py           # Chunking logic
-│   ├── retriever.py         # FAISS retriever
-│   └── generator.py         # Answer generation (basic)
+│   ├── chunker.py           # Text chunking logic
+│   ├── retriever.py         # FAISS semantic retriever
+│   └── generator.py         # Extractive answer generator
 │
 ├── scaledown/
-│   └── compressor.py        # Context compression module
+│   └── compressor.py        # ScaleDown context compression
 │
 ├── dashboard/
-│   └── metrics.py           # Manual statistics
+│   └── metrics.py           # Manual statistics module
 │
 ├── sample_data/
 │   └── sample_manual.txt
 │
 ├── requirements.txt
 └── README.md
-```
 
 ---
 
-##⚡ Quick Start
-
+## ⚡ Quick Start
 1️⃣ Clone Repository
-bash
-Copy code
 git clone https://github.com/<your-username>/product-manual-assistant.git
 cd product-manual-assistant
 2️⃣ Create Virtual Environment
-bash
-Copy code
 python -m venv .venv
 3️⃣ Activate Environment
 Windows (PowerShell)
-bash
-Copy code
 .venv\Scripts\activate
 Mac/Linux
-bash
-Copy code
 source .venv/bin/activate
 4️⃣ Install Dependencies
-bash
-Copy code
 pip install -r requirements.txt
 5️⃣ Run Streamlit App
-bash
-Copy code
 streamlit run app.py
+App will open in browser at:
+http://localhost:8501
+
 ---
 
-##💬 Example Questions
+## 🎥 Demo Video
+📌 Watch the working demo here:
+➡️ (Add your demo video link here)
+
+Example:
+
+md
+Copy code
+https://drive.google.com/file/d/XXXX/view
+or
+
+md
+Copy code
+https://youtu.be/XXXX
+---
+
+## 💬 Example Questions
 Try asking:
 
 How do I load paper in the printer?
 
 How do I print on envelopes?
 
-How can I improve print quality?
+How can I print on both sides of the paper?
 
 What should I do if paper jams?
+
+How do I clean print cartridges?
 
 ---
 
 ## ⚠ Notes
-This project uses a basic extractive answer generator.
+This assistant uses a basic extractive answer generator.
 
 It does not require any paid API key.
 
-Answers are generated from retrieved manual chunks.
+Answers are generated directly from retrieved manual chunks.
 
 ---
 
-##📌 Future Improvements
-Add better LLM-based answer generation
-
+## 📌 Future Improvements
 Add page-level citations
 
-Improve chunking + ranking
+Integrate a full LLM-based answer generator
+
+Support multiple manuals at once
 
 Deploy on Streamlit Cloud
 
 ---
 
-##👨‍💻 Author
+## 👨‍💻 Author
 Built by Dev Verma
 Project: Product Manual Assistant (RAG + ScaleDown)
+
