@@ -70,25 +70,35 @@ product-manual-assistant/
 
 ## ⚡ Quick Start
 1️⃣ Clone Repository
+
 git clone https://github.com/DevVerma14/product-manual-assistant.git
 
 cd product-manual-assistant
 
 2️⃣ Create Virtual Environment
+
 python -m venv .venv
 
 3️⃣ Activate Environment
+
 Windows (PowerShell)
+
 .venv\Scripts\activate
+
 Mac/Linux
+
 source .venv/bin/activate
 
 4️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 5️⃣ Run Streamlit App
+
 streamlit run app.py
+
 App will open in browser at:
+
 http://localhost:8501
 
 ---
