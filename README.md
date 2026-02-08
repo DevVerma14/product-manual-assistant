@@ -57,6 +57,7 @@ product-manual-assistant/
 │
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
